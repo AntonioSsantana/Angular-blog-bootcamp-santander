@@ -85,6 +85,7 @@ time,
 mark,
 audio,
 video {
+  color: white;
   margin: 0;
   padding: 0;
   border: 0;
@@ -102,15 +103,15 @@ video {
   }
 
   & h2 {
-	font-size: 10vh;
+	font-size: 6vh;
   }
 
   & h3 {
-	font-size: 8vh;
+	font-size: 4vh;
   }
 
   & h4 {
-	font-size: 4vh;
+	font-size: 2vh;
   }
 }
 /* HTML5 display-role reset for older browsers */
