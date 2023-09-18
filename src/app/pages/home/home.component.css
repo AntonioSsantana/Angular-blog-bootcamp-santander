@@ -10,3 +10,8 @@
   align-items: center;
   margin-top: 5vh;
 }
+
+.container__articles {
+  display: flex;
+  flex-direction: row;
+}
