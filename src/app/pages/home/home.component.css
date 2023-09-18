@@ -1,0 +1,12 @@
+.container__home-page {
+  & hr {
+    width: 70vh;
+  }
+}
+
+.container__home-page-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5vh;
+}

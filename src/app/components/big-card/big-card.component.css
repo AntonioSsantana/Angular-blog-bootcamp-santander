@@ -1,0 +1,15 @@
+.container__big-card {
+    display: flex;
+    flex-direction: column;
+    width: 100vh;
+    margin-left: 20vh;
+    margin-top: 20vh;
+    border: 2px solid red;
+}
+
+.container__big-card-image > p {
+  opacity: 0.4;
+  font-family: 'Courier New', Courier, monospace;
+  margin-top: 0.5vh;
+  margin-bottom: 2vh;
+}
