@@ -22,11 +22,11 @@
   align-items: flex-start;
 }
 
-.container__big-card-title > h3 {
+.container__big-card-title > a > h3 {
   margin-bottom: 2vh;
-  border-bottom: 2px solid rgb(202, 200, 200);
 }
 
 .container__big-card-description > p {
-  color: rgb(217, 211, 211);
+  font-size: 2vh;
+  color: rgb(149, 149, 149);
 }
