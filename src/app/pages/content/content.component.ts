@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class ContentComponent implements OnInit {
   imageCover: string = '';
   contentTitle: string = '';
-  contentArticle: string = '';
+  contentDescription: string = '';
 
   constructor() { }
 
