@@ -5,12 +5,19 @@
   </div>
   <div class="container__articles">
     <article class="articles-main">
-      <app-big-card></app-big-card>
+      <app-big-card
+        [imageCover]="imageCover"
+        [cardTitle]="cardTitle"
+        [cardDescription]="cardDescription"
+      >
+      </app-big-card>
     </article>
     <article class="articles-others">
-      <app-small-card></app-small-card>
-      <app-small-card></app-small-card>
-      <app-small-card></app-small-card>
+      <app-small-card
+        *ngFor="let i of blogSmallCardItens"
+        [cardDescription]="i.description"
+        [imageCover]="i.img_url"
+      ></app-small-card>
     </article>
   </div>
 </div>

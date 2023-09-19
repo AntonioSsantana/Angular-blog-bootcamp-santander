@@ -1,24 +1,17 @@
 <!-- Big-card-component ✅ -->
 <div class="container__big-card">
   <div class="container__big-card-image">
-    <img
-      src="https://www.unfe.org/wp-content/uploads/2019/04/SM-placeholder.png"
-      alt="placeholder"
-      width="400vh"
-    />
+    <img src="{{ imageCover }}" alt="placeholder" width="400vh" />
     <p class="small-card-date">23/05/2022</p>
   </div>
   <div class="container__big-card-infos">
     <div class="container__big-card-title">
       <a href="">
-        <h3>Angular versão X</h3>
+        <h3>{{ cardTitle }}</h3>
       </a>
     </div>
     <div class="container__big-card-description">
-      <p>
-        A nova versão do Angular traz novas funcionalidades, métodos e melhorias
-        de desempenho...
-      </p>
+      <p>{{ cardDescription }}</p>
     </div>
   </div>
 </div>
