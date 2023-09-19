@@ -1,17 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 import { HomeComponent } from './home.component';
 import { SmallCardComponent } from 'src/app/components/small-card/small-card.component';
 import { BigCardComponent } from 'src/app/components/big-card/big-card.component';
-import { HeaderComponent } from 'src/app/components/header/header.component';
 
 @NgModule({
-  declarations: [SmallCardComponent, BigCardComponent, HeaderComponent],
+  declarations: [SmallCardComponent, BigCardComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
-  exports: [SmallCardComponent, BigCardComponent, HeaderComponent],
+  exports: [SmallCardComponent, BigCardComponent],
   providers: [],
   bootstrap: [HomeComponent]
 })
