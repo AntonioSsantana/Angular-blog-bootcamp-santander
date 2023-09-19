@@ -1,4 +1,5 @@
 .container__home-page {
+  width: 100%;
   & hr {
     width: 70vh;
   }
