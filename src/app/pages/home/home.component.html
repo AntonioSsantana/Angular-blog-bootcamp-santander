@@ -8,6 +8,7 @@
         [imageCover]="imageCover"
         [cardTitle]="cardTitle"
         [cardDescription]="cardDescription"
+        [id]="1"
       >
       </app-big-card>
     </article>
@@ -16,6 +17,7 @@
         *ngFor="let i of blogSmallCardItens"
         [cardDescription]="i.description"
         [imageCover]="i.img_url"
+        [id]="i.id"
       ></app-small-card>
     </article>
   </div>

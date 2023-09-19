@@ -12,6 +12,7 @@ export class HomeComponent implements OnInit {
   imageCover: string = '';
   cardTitle: string = '';
   cardDescription: string = '';
+  id: number = 0;
   blogSmallCardItens: any[] = [];
 
   constructor() {}
@@ -23,6 +24,7 @@ export class HomeComponent implements OnInit {
     this.imageCover = blogBigCard[0].img_url;
     this.cardTitle = blogBigCard[0].title;
     this.cardDescription = blogBigCard[0].description;
+    this.id = blogBigCard[0].id;
 
     for (let item of blogSmallCard) {
       this.blogSmallCardItens.push(item);
