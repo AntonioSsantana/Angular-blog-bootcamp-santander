@@ -16,11 +16,11 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    const blog = objMock.data.filter((i) => i.isBig === true);
+    const blogBigCard = objMock.data.filter((i) => i.isBig === true);
   
-    this.imageCover = blog[0].img_url;
-    this.cardTitle = blog[0].title;
-    this.cardDescription = blog[0].description;
+    this.imageCover = blogBigCard[0].img_url;
+    this.cardTitle = blogBigCard[0].title;
+    this.cardDescription = blogBigCard[0].description;
   }
 
 }
