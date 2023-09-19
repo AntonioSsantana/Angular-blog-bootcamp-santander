@@ -1,7 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-
-// Mock
-import objMock from '../../../mock/obj.json';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-big-card',
@@ -9,17 +6,15 @@ import objMock from '../../../mock/obj.json';
   styleUrls: ['./big-card.component.css']
 })
 export class BigCardComponent implements OnInit {
+  @Input()
   imageCover: string = '';
+  @Input()
   cardTitle: string = '';
+  @Input()
   cardDescription: string = '';
 
   constructor() {}
 
   ngOnInit(): void {
-    const blog = objMock.data.filter((i) => i.isBig === true);
-  
-    this.imageCover = blog[0].img_url;
-    this.cardTitle = blog[0].title;
-    this.cardDescription = blog[0].description;
   }
 }
