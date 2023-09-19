@@ -11,7 +11,7 @@ export class SmallCardComponent implements OnInit {
   @Input()
   cardDescription: string = '';
   @Input()
-  id: number = 0;
+  id: string = "0";
 
   constructor() {}
 

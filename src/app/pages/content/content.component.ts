@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+
+// Mock
+import objMock from '../../../mock/obj.json';
 
 @Component({
   selector: 'app-content',
@@ -9,9 +13,25 @@ export class ContentComponent implements OnInit {
   imageCover: string = '';
   contentTitle: string = '';
   contentDescription: string = '';
+  private id: string | null = '0';
 
-  constructor() { }
+  constructor(
+    private route: ActivatedRoute
+  ) { }
 
   ngOnInit(): void {
+    this.route.paramMap.subscribe((value) => {
+      this.id = value.get('id');
+    })
+
+    this.setValues(this.id);
+  }
+
+  setValues(id: string | null): void {
+    const result = objMock.data.filter((i) => id === i.id)[0];
+    
+    this.imageCover = result.img_url;
+    this.contentTitle = result.title;
+    this.contentDescription = result.description;
   }
 }

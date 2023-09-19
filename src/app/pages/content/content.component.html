@@ -1,11 +1,12 @@
 <div class="container__content">
   <section class="content__banner-cover">
-    <img src="{{imageCover}}" alt="image" width="500vh" />
+    <img src="{{ imageCover }}" alt="image" width="500vh" />
   </section>
+  <a [routerLink]="['/']"> << Voltar</a>
   <section class="content__title">
-    <h2>{{contentTitle}}</h2>
+    <h2>{{ contentTitle }}</h2>
   </section>
   <section class="content__description">
-    <p>{{contentDescription}}</p>
+    <p>{{ contentDescription }}</p>
   </section>
 </div>
