@@ -1,0 +1,22 @@
+.container__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(46, 46, 46);
+  box-shadow: 0px 1px 5px 1px rgb(0, 0, 0);
+}
+
+.container__profile {
+  display: flex;
+  align-items: center;
+  margin: 2vh;
+
+  & p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 2vh;
+  }
+}
+
+.container__navegation > a {
+  margin: 5vh;
+}
